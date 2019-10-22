@@ -1,0 +1,7 @@
+.card-deck img {
+    width: 300px;
+    height: 300px;
+}
+.col-12 .card-deck{
+    display: flex;
+}

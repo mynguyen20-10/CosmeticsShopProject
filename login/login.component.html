@@ -1,0 +1,61 @@
+<div class="row">
+
+  <div id="login-form" class="col-md-6 col-md-offset-2">
+    <h1> {{ showLogin ? 'Sign In': 'Register' }} </h1>
+    <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+      <div *ngIf="showLogin">
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" formControlName="email" id="email">
+          <div *ngIf="submitted && f.email.errors" class="error">
+            <div *ngIf="f.email.errors.required">Email is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" formControlName="password" id="pwd">
+          <div *ngIf="submitted && f.password.errors" class="error">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+          </div>
+        </div>
+        <button class="btn btn-default">Login</button>
+        <button class="toggleBtn login" (click)='toggle()'>You vave no account? Register</button>
+      </div>
+      <div *ngIf="!showLogin">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" formControlName="firstName" id="firstName">
+          <div *ngIf="submitted && f.firstName.errors" class="error">
+            <div *ngIf="f.firstName.errors.required">FirstName is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" formControlName="lastName" id="lastName">
+          <div *ngIf="submitted && f.lastName.errors" class="error">
+            <div *ngIf="f.lastName.errors.required">Password is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="emailSignup">Email address:</label>
+            <input type="email" class="form-control" formControlName="emailSignup" id="emailSignup">
+            <div *ngIf="submitted && f.emailSignup.errors" class="error">
+              <div *ngIf="f.emailSignup.errors.required">Email is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="passwordSignup">Password:</label>
+            <input type="password" class="form-control" formControlName="passwordSignup" id="pwd">
+            <div *ngIf="submitted && f.passwordSignup.errors" class="error">
+              <div *ngIf="f.passwordSignup.errors.required">Password is required</div>
+            </div>
+          </div>
+        <button class="btn btn-default">Register</button>
+        <button class="toggleBtn login" (click)='toggle()'>Have an account? Sign In</button>
+      </div>
+      <div *ngIf="invalid" class="error">
+        <div>Invalid credentials.</div>
+      </div>
+    </form>
+  </div>
+</div>

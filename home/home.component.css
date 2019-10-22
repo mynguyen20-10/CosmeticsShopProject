@@ -1,0 +1,48 @@
+.Height--header{
+    height: 80px;
+}
+
+
+.Height--slide{
+    height: 400px;
+}
+.H-W--image{
+    height: 250px;
+}
+.H-W--Image-Slide{
+    height: 400px;
+    width: 100%;
+}
+.Height-Produce{
+    height: 1700px;
+}
+.Height-Adv{
+    height: 1000px;
+}
+.Height--footer{
+    height: 200px;
+}
+.Type--word{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+.Font--Cosmetic{
+    font-family:fantasy;
+    font-size: 30px;
+}
+.Body{
+    background-image: url(https://msmobile.com.vn/upload_images/images/hinh-nen-powerpoint-mau-xanh-da-troi-1.jpg);
+}
+.Img--adv{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 576px){
+    .Font--size{font-size: 20px;}
+}
+@media screen and (min-width: 577px){
+    .Font--size{font-size: 40px; display: flex; justify-content:center;}
+}
+

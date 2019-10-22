@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sua_Rua_Mat</title>
+</head>
+<body>
+        <div class="container mb-3">
+                <div class="row">
+                    <div class="col-12 px-0 "> 
+                         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                             <a class="navbar-brand d-block d-md-none" href="#"> Menu </a>
+                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                 <span class="navbar-toggler-icon"></span>
+                             </button>
+                               
+                             <div class="collapse navbar-collapse Font--size" id="navbarSupportedContent">
+                                 <ul class="navbar-nav">
+                                     <li class="nav-item pl-5">
+                                         <a class="nav-link " href="#"> Trang chủ </a>
+                                     </li>
+                                     <li class="nav-item dropdown pl-5">
+                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                 Sản phẩm
+                                             </a>
+                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                 <a class="dropdown-item" href="/son"> Son </a>
+                                                 <a class="dropdown-item" href="/sua-rua-mat"> Sữa rửa mặt </a>
+                                                 <a class="dropdown-item" href="/kem-duong"> Kem dưỡng da </a>
+                                                 <a class="dropdown-item" href="/mat-na"> Mặt nạ dưỡng da</a>
+                                             </div>
+                                     </li>
+                                     <li class="nav-item pl-5">
+                                         <a class="nav-link" routerLink="/gioithieu"> Giới thiệu </a>
+                                     </li> 
+                                     <li class="nav-item pl-5">
+                                         <a class="nav-link " routerLink="/lienhe"> Liên hệ </a>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </nav>
+                   </div>
+                 </div>
+            </div> 
+  <div><h1>Sản Phẩm Sửa Rửa Mặt</h1></div>
+  <div class="row mt-5">
+      <div class="col-12">
+          <div class="card-deck">
+              <div class="card">
+                  <img src="https://banbuonsieure.com/wp-content/uploads/2017/07/sua-rua-mat-herb-day-365-cleansing-foam-han-quoc.jpg" class="card-img-top H-W--image">
+                  <div class="card-body">
+                      <p> Sữa rửa mặt herb day</p>
+                      <p> Giá: 100.000đ</p>
+                      <button type="button" class="btn btn-outline-success" (click)="navigateToCart()"> Đặt hàng </button>
+                  </div>
+              </div>
+              <div class="card ">
+                  <img src="http://rooicell.vn/uploads/sanpham/CLEANSING-TYPE/qqN8WtDRMuGBACKGROUND.png" class="card-img-top H-W--image">
+                  <div class="card-body"> 
+                      <p> Sữa rửa mặt Rooicell </p>
+                      <p> Giá: 350.000đ</p>
+                      <button type="button" class="btn btn-outline-success" (click)="navigateToCart()"> Đặt hàng </button>
+                  </div>
+              </div>
+              <div class="card d-none d-md-block">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYEYyJQJbL4J8ibo18qtJ_mDHasq5gUW2p4ZRoJsTTtsmamkR" class="card-img-top H-W--image">
+                  <div class="card-body">
+                      <p> Sữa rửa mặt O HUI </p>
+                      <p> Giá: 300.000đ</p>
+                      <button type="button" class="btn btn-outline-success" (click)="navigateToCart()"> Đặt hàng </button>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/299/860/products/sua-rua-mat-farm-stay-han-quoc-180ml-oc-sen-snail-pure-cleansing-foam1.jpg?v=1520963062377" class="card-img-top H-W--image">
+                  <div class="card-body">
+                      <p> Sữa rửa mặt Snail </p>
+                      <p> Giá: 350.000đ</p>
+                      <button type="button" class="btn btn-outline-success" (click)="navigateToCart()"> Đặt hàng </button>
+                  </div>
+              </div>
+
+          </div>
+          <div class="col-12">
+              <div class="card-deck">
+                  <div class="card">
+                      <img src="data:image/jpeg;base64,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" class="card-img-top H-W--image">
+                      <div class="card-body">
+                          <p> Sữa rửa mặt PerfectWhile </p>
+                          <p> Giá: 190.000đ</p>
+                          <button type="button" class="btn btn-outline-success" (click)="navigateToCart()"> Đặt hàng </button>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGDMFgRJaV83HAHrmsKsiKMI7JpgojQtrRR-rv-6Mj1tWS_KUIw">
+                      <div class="card-body">
+                          <p> Sữa rửa mặt Rosette </p>
+                          <p> Giá: 150.000đ</p>
+                          <button type="button" class="btn btn-outline-success" (click)="navigateToCart()"> Đặt hàng </button>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MxbPd4hC32ezYvyEvf_RKlH38nwdWfMSIvA_7pAkDFlslYqwmQ" class="card-img-top H-W--image">
+                      <div class="card-body">
+                          <p> Sữa rửa mặt Tea Tree </p>
+                          <p> Giá: 450.000đ</p>
+                          <button type="button" class="btn btn-outline-success" (click)="navigateToCart()"> Đặt hàng </button>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYWxoVdi7ORguj4IhPg7s-Rrl9UnqLXCJfiPcqZL0G8W9B3jrow" class="card-img-top H-W--image">
+                      <div class="card-body">
+                          <p> Sữa rửa mặt TRANSINO </p>
+                          <p> Giá: 250.000đ</p>
+                          <button type="button" class="btn btn-outline-success" (click)="navigateToCart()"> Đặt hàng </button>
+                      </div>
+                  </div>
+            
+                
+                </div>
+                </div>
+      </div>
+  </div>
+</body>
+</html>

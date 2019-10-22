@@ -1,0 +1,15 @@
+.error{
+  color: #FF0000;
+}
+
+.toggleBtn:hover {background: #eee;}
+
+.toggleBtn {
+  color: green;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
